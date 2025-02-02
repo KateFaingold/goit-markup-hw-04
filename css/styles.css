@@ -346,6 +346,7 @@
  .social-icons {
      width: 40px;
      height: 40px;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
  }
 
@@ -364,22 +365,9 @@
      background-color: #404bbf;
  }
 
- .instagram {
+ .social {
      fill: #f4f4fd;
  }
-
- .twitter {
-     fill: #f4f4fd;
- }
-
- .facebook {
-     fill: #f4f4fd;
- }
-
- .linkedin {
-     fill: #f4f4fd;
- }
-
 
 
  .portfolio {
@@ -433,6 +421,31 @@
      padding: 32px 16px;
      border: 1px solid #e7e9fc;
      border-top: none;
+ }
+
+ .cover-text {
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: #4d5ae5;
+     font-size: 16px;
+     height: 100%;
+     color: #f4f4fd;
+     transform: translateY(100%);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     overflow: auto;
+     padding: 40px 32px;
+     letter-spacing: 0.02em;
+ }
+
+ .portfolio-item:hover .cover-text {
+     transform: translateY(0);
+     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ }
+
+ .wrap-cover-text {
+     position: relative;
+     overflow: hidden;
  }
 
  .page-footer {
