@@ -468,6 +468,7 @@
 
  .wrap-footer {
      display: flex;
+     align-items: baseline;
  }
 
  .footer-text {
